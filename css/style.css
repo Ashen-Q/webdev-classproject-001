@@ -1,74 +1,59 @@
 @import url("reset.css");
-
-html {
-	padding: 0;
-	margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	color: #333333;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	line-height: 1.6;
-	background-color: #f9f9f9;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #2c044a, #8b1b74);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: "Courier New", Courier, monospace;
-	font-weight: bold;
-	line-height: 1;
-	text-transform: uppercase;
-	margin: 0 0 1.6rem;
+.quote-container {
+  position: relative;
+  padding: 40px 30px;
+  max-width: 600px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.645);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-p {
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.6;
-	margin: 0 0 1.6rem;
+.quote-mark {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6);
+  position: absolute;
 }
 
-a {
-	color: #0056b3;
-	border-bottom: 2px solid transparent;
-	transition: all 0.5s ease-in-out;
+.quote-mark.top-left {
+  top: 10px;
+  left: 20px;
 }
 
-a:hover {
-	color: #002348;
-	border-bottom: 2px solid #002348;
+.quote-mark.bottom-right {
+  bottom: 10px;
+  right: 20px;
 }
 
-hr {
-	margin: 3.2rem 1.6rem;
-	color: #555555;
-	border-color: #555555;
+.quote-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 50px 0;
 }
 
-/* Layout */
-
-.container {
-	padding: 0;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1000px;
-}
-
-/* Media Queries */
-
-@media (min-width: 699px) {
-
-	/* CSS HERE */
-
-}
-
-/* Desktop Media Query */
-@media (min-width: 999px) {
-
-	/* CSS HERE */
-
+.quote-author {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  color: rgba(255, 255, 255, 0.8);
 }
